@@ -15,7 +15,7 @@ The AI agent assists small business owners by calculating total revenue based on
 - **AWS Lambda**: Executes revenue calculation logic
 - **IAM Roles**: Provides permissions for Bedrock ↔ Lambda integration
 
-![Architecture Diagram](docs/screenshots/architecture.png)
+
 
 ## ⚙️ Setup Guide
 
