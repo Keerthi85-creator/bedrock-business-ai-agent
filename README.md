@@ -22,19 +22,9 @@ The AI agent assists small business owners by calculating total revenue based on
 1. **Request Bedrock Model Access** from AWS Console
 2. **Create AI Agent**:
    - Add agent instructions
-   - Create an Action Group named `RevenueCalculator`
+   - Create an Action Group named `bussiness-assistant-action_group`
    - Define parameters: `product1_name`, `product1_price`, etc.
 3. **Write Lambda Function** (see `/lambda/lambda_function.py`)
 4. **Attach Lambda to Action Group**
 5. **Test Agent** with prompts like:
    > “I sold 100 apples at ₹10 each and 200 oranges at ₹15 each”
-
-## 💻 Lambda Function Code
-
-```python
-def lambda_handler(event, context):
-    # Simple two-product revenue calculator
-    return {
-        "total_revenue": event["product1_price"] + event["product2_price"]
-    }
-
